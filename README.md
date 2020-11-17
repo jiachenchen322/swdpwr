@@ -10,4 +10,5 @@ swdpwr_macro_unix.sas
 swdpwr (This can be downloaded from: https://github.com/jiachenchen322/swdpwr/blob/main/swdpwr)
 
 The proper directory to swdpwr should be modified in the *.sas file in line "%let mydir=...". Please also check other paths in case of any unknown errors.
-
+ 
+Please refer to https://arxiv.org/abs/2011.06031 for more details and examples for using this SAS macro.
