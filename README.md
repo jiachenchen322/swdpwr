@@ -7,7 +7,7 @@ swdpwr.exe (This can be downloaded from: https://github.com/jiachenchen322/swdpw
 
 Files for UNIX:
 swdpwr_macro_unix.sas 
-swdpwr (This can be downloaded from: https://github.com/jiachenchen322/swdpwr/blob/main/swdpwr)
+swdpwr (This can be downloaded from: https://github.com/jiachenchen322/swdpwr/blob/main/swdpwr.zip)
 
 The proper directory to the executive file swdpwr should be modified in the *.sas file in line "%let mydir=...". Please also check other paths in case of any unknown errors.
  
