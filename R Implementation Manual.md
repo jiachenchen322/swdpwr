@@ -14,7 +14,5 @@ library(swdpwr)
 
 ## 3. Usage
 ```r
-swdpower(K, design, family = "binomial", model = "conditional", link = "identity", type = "cross-sectional", meanresponse_start = NA,
-meanresponse_end0 = meanresponse_start, meanresponse_end1 = NA, effectsize_beta = NA, sigma2 = 0, typeIerror = 0.05,
-alpha0 = 0.1, alpha1 = alpha0/2, alpha2 = NA)
+swdpower(K, design, family, model, link, type, meanresponse_start, meanresponse_end0, meanresponse_end1, effectsize_beta, sigma2, typeIerror, alpha0, alpha1, alpha2)
 ```
