@@ -40,9 +40,34 @@ The default setting assumes no time effect, meaning the anticipated mean respons
 The object returned by function `swdpower` has a class of `swdpower`, which includes a list of the design matrix and a summary of this design (including the power).
 
 ## 7. Useful Examples
+### Example 1. Conditional model with binary outcome and cross-sectional design
+**Note**: With binary outcomes, the variance argument `sigma2` is undefined and should not be specified. Due to this specific cross-sectional setting, we specify `α0 =α1` in the function and `α2` is also undefined.
 
+An investigator plans to conduct a cross-sectional stepped wedge design with 12 clusters and 3 periods, in which clusters are randomly allocated to one of the two sequences (6
+clusters per sequence). 
 
+- This trial has an average of 50 individuals per cluster per period with a total sample size of 1800, and measurements on the binary outcome will be taken.
 
+- Thebaseline proportion is assumed to be 0.2 and is expected to increase to 0.25 by the end of the study even in the absence of the intervention (due to the secular trend). 
+
+- The risk difference (RD) by the end of the study is specified to be 0.13 and thus it’s convenient to use the identity link under the conditional model (with the treatment effect β to be also 0.13 for this model configuration). 
+
+- The investigator assumes a constant intracluster correlation coefficient (ICC) over time, equal to 0.01 on the proportions scale, here interpreted as the correlation between different individuals within the same cluster. 
+
+- The treatment effect is to be tested at a two-sided 5% level of significance.
+
+Fitting the model with all above required inputs in R:
+```r
+library("swdpwr")
+dataset = matrix(c(rep(c(0, 1, 1), 6), rep(c(0, 0, 1), 6)), 12, 3, byrow = TRUE)
+swdpower(K = 50, design = data, family = "binomial", model = "conditional", link = "identity", type = "cross-sectional", meanresponse_start = 0.2, meanresponse_end0 = 0.25, meanresponse_end1 = 0.38, typeIerror = 0.05, alpha0 = 0.01, alpha1 = 0.01)
+```
+
+The ouput will be:
+```r
+This cross-sectional study has total sample size of 1800
+Power for this scenario is 0.899 for the alternative hypothesis treatment effect beta = 0.13 ( two-sided Type I error = 0.05 )
+```
 
 
 ## 7. Citation
