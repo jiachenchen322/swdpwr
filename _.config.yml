@@ -3,12 +3,6 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-defaults:
-  - scope:
-      path: ""  
-      type: "pages"
-    values:
-      permalink: /R Implementation Manual.html
 include:
   - CONTRIBUTING.md
   - README.md
