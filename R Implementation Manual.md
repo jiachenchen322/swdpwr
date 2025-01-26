@@ -1,4 +1,4 @@
-# swdpwr: A SAS Macro and An R Package for Power Calculations in Stepped Wedge Cluster Randomized Trials
+# swdpwr: Power Calculations in Stepped Wedge Cluster Randomized Trials
 <img src="illustration.png" alt="illustration" height="250">
 A pictorial representation of a stepped wedge trial, adapted from [Prof Karla Hemming & Prof Monica Taljaard. (2020). When is a stepped-wedge cluster randomised trial a good design choice? Research OUTREACH. (121)](https://researchoutreach.org/articles/stepped-wedge-cluster-randomised-trial-good-design-choice/) 
 
