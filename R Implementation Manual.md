@@ -117,7 +117,7 @@ This cross-sectional study has total sample size of 4800
 Power for this scenario is 0.946 for the alternative hypothesis treatment effect beta = 0.05 (two-sided Type I error = 0.05 )
 ```
 ### Example 4. Method with continuous outcomes under identity link
-**Note**: The designs for continuous outcomes are conducted under the **identity** link function. Both cross-sectional and cohort designs with and without time effects can be accommodated in our software. **Here, the argument `sigma2` must be specified**. Details can be referred to in our paper if you are interested.
+**Note**: **The designs for continuous outcomes are conducted under the identity link function**. Both cross-sectional and cohort designs with and without time effects can be accommodated in our software. **Here, the argument `sigma2` must be specified**. Details can be referred to in our paper if you are interested.
 
 An investigator plans to conduct a closed cohort stepped wedge design with 8 clusters and 3 periods, in which clusters are randomly allocated to one of the two sequences (4 clusters per sequence).
 
